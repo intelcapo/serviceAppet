@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Proyecto appet</title>
+</head>
+<body>
+	<h1>Bienvenidos</h1>
+	<h2>Proyecto APPET,  especialización DADM SENA 2016</h2>
+	<fieldset>
+	<legend>Prueba de inserción de datos en la bd</legend>
+	<form action="serviceInsertarUsuario.php" method="GET">
+		<input type="text" placeholder="Email" name="email"> <br> <br>
+		<input type="text" placeholder="Nombre" name="nombre"> <br> <br>
+		<input type="text" placeholder="Apellido" name="apellido"><br> <br>
+		<input type="text" placeholder="Usuario" name="usuario"><br><br>
+		<input type="password" placeholder="Contraseña" name="password"><br><br>
+		<input type="number" placeholder="teléfono" name="telefono"><br><br>
+		<input type="text" placeholder="sexo" name="sexo"><br><br>
+		<input type="text" placeholder="UrlFoto" name="urlFoto"><br><br>
+		<input type="Submit" value="Almacenar en bd"> 
+	</form>
+	<form action="serviceConsultarUsuarios.php">
+		<input type="Submit"  value="Consultar usuarios"><br>
+	</form>	
+		
+	
+	</fieldset>
+	<br>
+	
+	<fieldset>
+		<legend>Loguear usuario</legend>
+		<form action = "serviceLoguearUsuario.php" method="GET">
+			<input type="text"  placeholder="Usuario" name="usuario">
+			<input type="password"  placeholder="Contraseña" name="password">
+			<input type="Submit" value="Loguear">
+		</form>
+	</fieldset><br><br>
+
+	<fieldset>
+		<legend>Registrar Mascota</legend>
+		<form action="serviceInsertarMascota.php" method="GET">
+			
+			<input type="text" placeholder="Usuario" name="usuario"> <br><br>
+			<input type="text" placeholder="Nombre mascota" name="nombre"><br><br>
+			<input type="text" placeholder="Raza" name="raza"><br><br>
+			<input type="text" placeholder="Edad" name="edad"><br><br>
+			<input type="text" placeholder="Vacunas" name="vacuna"><br><br>
+			<input type="text" placeholder="Sexo" name="sexo"><br><br>
+			<input type="text" placeholder="Gustos" name="gusto"><br><br>
+			<input type="text" placeholder="URL imagen" name="urlImg"><br><br>
+			<input type="Submit" value="Registrar mascota"><br><br>
+		</form>
+
+		<form action="serviceConsultarMascotas.php">
+			<input type="Submit"  value="Consultar Mascotas"><br>
+		</form>	
+	</fieldset>
+
+	<fieldset>
+		<legend>Registrar Lugar</legend>
+		<form action="serviceInsertarLugar.php" method="GET">
+			
+			<input type="text" placeholder="Id lugar" name="lugId"> <br><br>
+			<input type="text" placeholder="Nombre" name="nombre"><br><br>
+			<input type="text" placeholder="Nit" name="nit"><br><br>
+			<input type="text" placeholder="Direccion" name="direccion"><br><br>
+			<input type="text" placeholder="Telefono" name="telefono"><br><br>
+			<input type="text" placeholder="Latitud" name="latitud"><br><br>
+			<input type="text" placeholder="Longitud" name="longitud"><br><br>
+			<input type="text" placeholder="Clasificacion" name="clasificacion"><br><br>
+			<input type="Submit" value="Registrar lugar"><br><br>
+		</form>
+
+		<form action="serviceConsultarLugares.php">
+			<input type="Submit"  value="Consultar lugares"><br>
+		</form>	
+	</fieldset>
+</body>
+</html>
